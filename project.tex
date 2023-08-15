@@ -1,0 +1,87 @@
+\documentclass[]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{url}
+
+\usepackage{times}
+
+\newcommand{\comment}[1]{}
+
+\title{CS252:BOX FILLING GAME}
+\author{
+\begin{tabular}{cc}
+	Danaram Meghwal(11231) & Sahil Solanki(11624) \\
+	\url{danaram@iitk.ac.in} & \url{ssolanki@iitk.ac.in} \\
+	\multicolumn{2}{c}{Indian Institute of Technology, Kanpur}
+\end{tabular}
+}
+\date{Final report \\	% replace by ``initial'' or ``final'' as appropriate
+15th April, 2013}	% replace by actual date of submission or \today
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	%
+	Box filling game
+	%
+\end{abstract}
+
+
+\section{Problem Statement}
+In this game there are dots at rectangular positions and 
+each person draws a line between 2 points either horizontally
+or vertically, if it makes a square/rectangle (i.e. joining 4 nearby dots) 
+then same person get the chance to draw another line.
+The person who made most number of squares/rectangles wins the game.
+
+\section{Method Used and Explanation}
+  Here Python is used as programming language.Muliple
+player can play this game by puting line between two points
+one by one.So finally person who have most numer of squares won the match.
+It takes number of dots player want and number of players from terminal. maximum 4 player can play at a time.\\
+  I define a class for every player with two function one initializing player and seconf for update it.
+Tkinter is used for frame and messegebox.I divided the frame in two parts one for result and other for as game dots.
+when user click between two dots a line appear and turn goes to 2nd player and so on.Everytime when
+a new box made it check for game is finished or not and finally shows result of game when gameover.
+
+\section{Results}
+Results of game is shown by a messege box\\
+For some input outfut is as follow:\\
+\begin{table}[ht]
+\caption{Nonlinear Model Results}
+% title of Table
+\centering
+% used for centering table
+\begin{tabular}{c c c c}
+% centered columns (4 columns)
+\hline\hline
+%inserts double horizontal lines
+Serial no. & Case & output\\ [0.1ex]
+% inserts table
+%heading
+\hline
+% inserts single horizontal line
+1 & player\ \textgreater 5 or \textless 2  & Takes input again\\
+% inserting body of the table
+2 & Normal Termination & winner name and full score \\
+3 & Equal square & All players having draw \\ [1ex]
+% [1ex] adds vertical space
+\hline
+%inserts single line
+\end{tabular}
+\label{table:nonlin}
+% is used to refer this table in the text
+\end{table}
+
+\section{Conclusions and Improvements}
+
+So we can play this game just compiling source code of python file and Enjoy the game with friends.\\
+This game further be improved by taking input for game screen not from terminal and can be modified as 
+a webgame using pyjs or other tools.
+
+\end{document}
